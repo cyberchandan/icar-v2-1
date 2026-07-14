@@ -58,3 +58,18 @@ ol.roman li {
 ol.roman li::marker {
     font-weight: bold;
 }
+
+/* header fixed css  */
+#mainHeader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1050;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+body{
+    padding-top: 125px; /* Adjust according to your header height */
+}
