@@ -45,4 +45,16 @@
         }
 
 
-        
+        /* ordering alignment fixing  */
+        ol.roman {
+    padding-left: 40px;
+}
+
+ol.roman li {
+    padding-left: 10px;
+    margin-bottom: 12px;
+}
+
+ol.roman li::marker {
+    font-weight: bold;
+}
