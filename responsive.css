@@ -1,0 +1,213 @@
+/* Responsive CSS for ICAR Tender Document */
+
+/* Large Tablets and Landscape Mode (max-width: 991px) */
+@media (max-width: 991px) {
+    body {
+        padding-top: 0 !important; /* Make header static/relative instead of fixed to maximize mobile viewport */
+    }
+
+    #mainHeader {
+        position: static !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,.08) !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+
+    #mainHeader .row {
+        text-align: center;
+    }
+
+    #mainHeader .d-flex {
+        flex-direction: column;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    #mainHeader .d-flex img {
+        margin-right: 0 !important;
+        margin-bottom: 12px;
+        max-width: 65px !important;
+    }
+
+    #mainHeader h2 {
+        font-size: 1.5rem !important; /* ~24px */
+    }
+
+    #mainHeader h5 {
+        font-size: 1.05rem !important; /* ~17px */
+    }
+
+    #mainHeader p {
+        font-size: 0.95rem !important; /* ~15px */
+    }
+
+    .document {
+        padding: 40px !important;
+        margin: 20px auto !important;
+        border-radius: 8px;
+    }
+}
+
+/* Medium Tablets and Portrait Mode (max-width: 767px) */
+@media (max-width: 767px) {
+    .document {
+        padding: 30px !important;
+        margin: 15px auto !important;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+    }
+
+    .document h1 {
+        font-size: 24px !important;
+    }
+
+    .document h2 {
+        font-size: 20px !important;
+    }
+
+    .document h3 {
+        font-size: 18px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .section-title {
+        font-size: 18px !important;
+        margin-top: 30px !important;
+        margin-bottom: 15px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+        text-align: left !important; /* Justified text on small screens often has huge, ugly word gaps */
+    }
+
+    ol.roman {
+        padding-left: 25px !important;
+    }
+
+    ol.document-list, ol[type], ul {
+        padding-left: 20px !important;
+    }
+
+    ol.roman li, ol.document-list li, ul li {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Table responsive behavior without horizontal scroll (fitting viewport) */
+    .table-responsive {
+        overflow-x: visible !important; /* Disable horizontal scroll wrapper */
+        margin-bottom: 1.5rem;
+    }
+
+    .table-responsive table {
+        min-width: 100% !important;
+        width: 100% !important;
+        table-layout: auto !important;
+    }
+
+    .table-responsive table th {
+        width: auto !important;
+    }
+
+    .table-responsive table th,
+    .table-responsive table td {
+        padding: 5px 3px !important;
+        font-size: 11.5px !important;
+        line-height: 1.3 !important;
+        word-break: break-word !important;
+    }
+
+    .table-responsive table ul,
+    .table-responsive table ol {
+        padding-left: 10px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .table-responsive table ul li,
+    .table-responsive table ol li {
+        font-size: 11px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 3px !important;
+    }
+
+    /* Stack flex header/footer blocks that are side-by-side on desktop */
+    .d-flex.justify-content-between {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .d-flex.justify-content-between h5, 
+    .d-flex.justify-content-between h6, 
+    .d-flex.justify-content-between p {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    #mainHeader h2 {
+        font-size: 1.25rem !important; /* ~20px */
+    }
+
+    #mainHeader h5 {
+        font-size: 0.9rem !important; /* ~14.4px */
+    }
+
+    #mainHeader p {
+        font-size: 0.8rem !important; /* ~12.8px */
+    }
+
+    .document {
+        padding: 15px !important;
+        margin: 10px auto !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .document h1 {
+        font-size: 20px !important;
+    }
+
+    .document h2 {
+        font-size: 18px !important;
+    }
+
+    .document h3 {
+        font-size: 16px !important;
+    }
+
+    .section-title {
+        font-size: 16px !important;
+        margin-top: 25px !important;
+    }
+
+    p, ol.roman li, ol.document-list li, ul li {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+    }
+
+    ol.roman {
+        padding-left: 20px !important;
+    }
+
+    ol.document-list, ol[type], ul {
+        padding-left: 15px !important;
+    }
+
+    /* Extremely compact tables on small devices */
+    .table-responsive table th,
+    .table-responsive table td {
+        padding: 4px 2px !important;
+        font-size: 10.5px !important;
+    }
+
+    .table-responsive table ul li,
+    .table-responsive table ol li {
+        font-size: 10px !important;
+        line-height: 1.25 !important;
+    }
+}
